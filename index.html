@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Guide</h1>
+        <nav>
+            <a href="#" onclick="showLoginPage()">Login</a>
+            <a href="#" onclick="showAboutPage()">About Us</a>
+        </nav>
+    </header>
+
+    <div id="loginPage" class="hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <main id="mainPage" class="hidden">
+        <h2>Explore Popular Destinations</h2>
+        <div id="destinations"></div>
+        <button onclick="bookGuide()">Book a Guide</button>
+    </main>
+
+    <div id="aboutPage" class="hidden">
+        <h2>About Us</h2>
+        <p>Welcome to our Travel Guide App! We provide information on popular travel destinations across India. Explore and book your next adventure with us!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50; /* A vibrant green */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+#destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.destination {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: calc(30% - 40px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination:hover {
+    transform: scale(1.02);
+}
+
+.destination h3 {
+    margin: 0 0 10px;
+}
+
+.destination p {
+    margin: 0 0 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50; /* Match the header color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade for hover */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive adjustments */
+#loginPage {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#loginPage h2 {
+    text-align: center;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm label {
+    margin: 10px 0 5px;
+}
+
+#loginForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .destination {
+        width: calc(45% - 40px); /* Two items in a row */
+    }
+
+    #loginPage {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .destination {
+        width: calc(90% - 40px); /* One item in a row */
+    }
+
+    button {
+        width: 100%; /* Full width buttons on small screens */
+    }
+}
